@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Nord swatches */
+    --s-nord-b:  #242933;
+    --s-nord-0:  #2e3440;
+    --s-nord-1:  #3b4252;
+    --s-nord-2:  #434c5e;
+    --s-nord-3:  #4c566a;
+    --s-nord-4:  #d8dee9;
+    --s-nord-5:  #e5e9f0;
+    --s-nord-6:  #eceff4;
+    --s-nord-7:  #8fbcbb; /* Light Green */
+    --s-nord-8:  #88c0d0; /* Cyan */
+    --s-nord-9:  #81a1c1;
+    --s-nord-10: #5e81ac; /* Blue */
+    --s-nord-11: #bf616a; /* Red */
+    --s-nord-12: #d08770; /* Orange */
+    --s-nord-13: #ebcb8b; /* Yellow */
+    --s-nord-14: #a3be8c; /* Green */
+    --s-nord-15: #b48ead; /* Magenta */
+
+    --c-bg-0: var(--s-nord-b);
+    --c-bg:   var(--s-nord-0);
+    --c-bg-2: var(--s-nord-1);
+    --c-fg:   var(--s-nord-6);
+    --c-inactive: var(--s-nord-3);
+    --c-hovered:  var(--s-nord-4);
+    --c-active:   var(--s-nord-8);
+    --c-hi-primary:   var(--s-nord-8);
+    --c-hi-primary-2: var(--s-nord-7);
+    --c-hi-secondary: var(--s-nord-9);
+    --c-hi-tertiary:  var(--s-nord-10);
+
+    /* Component rarities */
+    --c-crude: var(--s-nord-4);
+    --c-common: var(--s-nord-12);
+    --c-extraordinary: var(--s-nord-14);
+    --c-rare: var(--s-nord-8);
+    --c-legendary: var(--s-nord-13);
+    --c-mythical: var(--s-nord-6);
+
+    /* Component types */
+    --c-material: var(--s-nord-13);
+    --c-refinement: var(--s-nord-8);
+    --c-powercomp: var(--s-nord-6);
+
+    /* Attributes */
+    --c-agility: var(--s-nord-14);
+    --c-speed: var(--c-agility);
+    --c-dexterity: var(--c-agility);
+
+    --c-strength: var(--s-nord-11);
+    --c-power: var(--c-strength);
+    --c-fortitude: var(--c-strength);
+
+    --c-intellect: var(--s-nord-10);
+    --c-engineering: var(--c-intellect);
+    --c-memory: var(--c-intellect);
+
+    --c-will: var(--s-nord-13);
+    --c-resolve: var(--c-will);
+    --c-awareness: var(--c-will);
+
+    --c-display: var(--s-nord-15);
+    --c-portrayal: var(--c-display);
+    --c-stunt: var(--c-display);
+
+    --c-charm: var(--s-nord-12);
+    --c-appeal: var(--c-charm);
+    --c-language: var(--c-charm);
+
+    /* Action types */
+    --c-turn-action: var(--s-nord-13);
+    --c-interrupt-action: var(--s-nord-15);
+
+    /* Metrics */
+    --c-invsize: var(--s-nord-11);
+    --c-slot: var(--s-nord-7);
+    --c-distance: var(--s-nord-14);
+    --c-disfavor: var(--s-nord-11);
+    --c-favor: var(--s-nord-13);
+    --c-negeffect: var(--s-nord-11);
+    --c-stamina: var(--s-nord-14);
+    --c-fatigue: var(--s-nord-7);
+    --c-damage: var(--s-nord-14);
+    --c-block: var(--s-nord-12);
+    --c-dodge: var(--s-nord-14);
+    --c-shp: var(--s-nord-14);
+    --c-dhp: var(--s-nord-15);
+    --c-time: var(--s-nord-13);
+
+    /* Damage types */
+    --c-dmgtype-physical: var(--s-nord-11);
+    --c-dmgtype-psyche: var(--s-nord-15);
+
+    /* Talent trees */
+    --c-warfare: var(--s-nord-11);
+    --c-tactics: var(--s-nord-14);
+    --c-innovation: var(--s-nord-12);
+    --c-magecraft: var(--s-nord-13);
+    --c-influence: var(--s-nord-10);
+    --c-prowess: var(--s-nord-15);
+
+    /* Group types */
+    --c-group-positive: var(--s-nord-14);
+    --c-group-negative: var(--s-nord-11);
+    --c-group-neutral: var(--s-nord-6);
+
+    /* Types of feature */
+    --c-feat-special: var(--s-nord-15);
+    --c-feat-debuffing: var(--s-nord-7);
+    --c-feat-penetration: var(--s-nord-12);
+    --c-feat-range: var(--s-nord-14);
+    --c-feat-damage: var(--s-nord-11);
+    --c-feat-utility: var(--s-nord-8);
+    --c-feat-annoyance: var(--s-nord-12);
+    --c-feat-defense: var(--s-nord-12);
+    --c-feat-movement: var(--s-nord-14);
+    --c-feat-healing: var(--s-nord-14);
+
+    /* Typefaces */
+    --t-noto-serif: 'Noto Serif', serif;
+    --t-noto-sans: 'Noto Sans', sans-serif;
+
+    /* Other variables */
+    --line-height: 1.2;
+    --animation-length-snappy: 0.0625s;
+
+    color: var(--c-fg);
+    background-color: var(--c-bg-0);
+
+    font-family: var(--t-noto-serif);
+    font-size: 14px;
+    line-height: var(--line-height);
+}
+
+body {
+    margin: 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: var(--t-noto-serif);
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+nav#tabs button {
+    background-color: var(--c-inactive);
+    color: var(--c-bg-0);
+    font-family: var(--t-noto-sans);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.125rem;
+    line-height: var(--line-height);
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    transition: all var(--animation-length-snappy) ease-out;
+}
+
+nav#tabs button:hover {
+    border-color: var(--c-hovered);
+    color: var(--c-hovered);
+    /* padding: 0.25rem 0.8rem; */
+    transition: all var(--animation-length-snappy) ease-out;
+}
+
+nav#tabs button.active {
+    color: var(--c-bg-0);
+    background-color: var(--c-active);
+    padding: 0.25rem 2rem;
+}
+
+nav#tabs button span.hotkey {
+    margin-left: 0.25rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-decoration: underline;
+}
+
+div.tab {
+    display: none;
+}
+
+div.tab.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+div.tab section.block {
+    box-sizing: border-box;
+    width: 100%;
+    background-image: linear-gradient(var(--c-bg), var(--c-bg-0));
+    transition: scale var(--animation-length-snappy) ease-in;
+}
+
+div.tab section.block:hover {
+    scale: 1.25;
+    transition: scale var(--animation-length-snappy) ease-out;
+}
+
+@media only screen and (min-width: 600px) {
+    div.tab section.block {
+        width: calc((100% - 1rem) / 2);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div.tab section.block {
+        width: calc((100% - 2rem) / 3);
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    div.tab section.block {
+        width: calc((100% - 3rem) / 4);
+    }
+}
+
+div.tab section.block {
+    border: 0.125rem solid var(--c-bg-2);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: var(--c-bg);
+    box-shadow: 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
+}
+
+div.tab section.block.info h1 {
+    font-size: 1.25rem;
+    font-family: var(--t-noto-sans);
+}
+
+div.tab details.group {
+    border: 0.25rem solid var(--c-bg-2);
+    border-radius: 0 0.25rem 0.25rem 0.25rem;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
+    width: 100%;
+}
+
+div.tab details.group > div.group-contents {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+div.tab details.group.positive {
+    border-color: var(--c-group-positive);
+    box-shadow: inset 0 0 1.7rem 0px hsl(from var(--c-group-positive) h s l / 40%), 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
+}
+
+div.tab details.group.positive summary {
+    background-color: var(--c-group-positive);
+    color: var(--c-bg-0);
+}
+
+div.tab details.group.positive summary::after {
+    color: var(--c-bg-0);
+    opacity: 0.5;
+}
+
+div.tab details.group.negative {
+    border-color: var(--c-group-negative);
+    box-shadow: inset 0 0 1.7rem 0px hsl(from var(--c-group-negative) h s l / 40%), 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
+}
+
+div.tab details.group.negative summary {
+    background-color: var(--c-group-negative);
+    color: var(--c-bg-0);
+}
+
+div.tab details.group.negative summary::after {
+    color: var(--c-bg-0);
+    opacity: 0.5;
+}
+
+div.tab details.group.neutral {
+    border-color: var(--c-group-neutral);
+    box-shadow: inset 0 0 1.7rem 0px hsl(from var(--c-group-neutral) h s l / 40%), 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
+}
+
+div.tab details.group.neutral summary {
+    background-color: var(--c-group-neutral);
+    color: var(--c-bg-0);
+}
+
+div.tab details.group.neutral summary::after {
+    color: var(--c-bg-0);
+    opacity: 0.5;
+}
+
+div.tab details.group:not(:first-child) {
+    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2 - 0.25rem + 1rem);
+}
+
+div.tab details.group > summary {
+    background-color: var(--c-bg-2);
+    border-radius: 0.25rem 0.25rem 0 0;
+    font-size: 1.3rem;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    top: calc(0px - 0.25rem - 1em * var(--line-height) - 0.25rem * 2 + 1px);
+    left: -0.25rem;
+    font-weight: normal;
+    color: var(--c-hi-primary);
+}
+
+div.tab details.group > summary {
+    cursor: pointer;
+}
+
+s {
+    opacity: 0.5;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+div.tab section.block.info p:not(:first-child) {
+    margin-top: 1rem;
+}
+
+div.tab section.block.info p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+div.tab section.block.info dl {
+    margin-block-start: 1.5rem;
+    margin-block-end: 0;
+    display: grid;
+    grid-gap: 0.25rem 1rem;
+}
+
+div.tab section.block.info dl:not(:last-child) {
+    margin-block-end: 1.5rem;
+}
+
+div.tab section.block.info dt {
+    color: var(--c-hi-primary);
+    text-align: right;
+}
+
+div.tab section.block.info dd {
+    grid-column-start: 2;
+    margin-inline-start: 0;
+}
+
+div.tab section.block.info table {
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+div.tab section.block.info table:not(:first-child) {
+    margin-top: 2rem;
+}
+
+div.tab section.block.info table:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+div.tab section.block.info table,
+div.tab section.block.info thead,
+div.tab section.block.info tbody,
+div.tab section.block.info tr,
+div.tab section.block.info th,
+div.tab section.block.info td {
+    border: 0.25rem solid var(--c-inactive);
+    border-collapse: collapse;
+}
+
+div.tab section.block.info table thead tr {
+    color: var(--c-hi-primary);
+}
+
+div.tab section.block.info tr.bright {
+    background-color: var(--c-bg-2);
+}
+
+div.tab section.block.info th,
+div.tab section.block.info td {
+    padding: 0.5rem;
+}
+
+div.tab section.feature h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+div.tab section.feature span.complexity {
+    display: block;
+    text-align: center;
+    color: var(--s-nord-13);
+}
+
+div.tab section.feature span.stackable {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: var(--s-nord-12);
+}
+
+div.tab section.feature.special {
+    border-color: var(--c-feat-special);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-special) h s l / 40%));
+}
+
+div.tab section.feature.debuff {
+    border-color: var(--c-feat-debuffing);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-debuffing) h s l / 40%));
+}
+
+div.tab section.feature.penetration {
+    border-color: var(--c-feat-penetration);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-penetration) h s l / 40%));
+}
+
+div.tab section.feature.range {
+    border-color: var(--c-feat-range);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-range) h s l / 40%));
+}
+
+div.tab section.feature.damage {
+    border-color: var(--c-feat-damage);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-damage) h s l / 40%));
+}
+
+div.tab section.feature.utility {
+    border-color: var(--c-feat-utility);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-utility) h s l / 40%));
+}
+
+div.tab section.feature.annoyance {
+    border-color: var(--c-feat-annoyance);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-annoyance) h s l / 40%));
+}
+
+div.tab section.feature.defense {
+    border-color: var(--c-feat-defense);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-defense) h s l / 40%));
+}
+
+div.tab section.feature.movement {
+    border-color: var(--c-feat-movement);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-movement) h s l / 40%));
+}
+
+div.tab section.feature.healing {
+    border-color: var(--c-feat-healing);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-healing) h s l / 40%));
+    box-shadow: 0 0 1rem hsl(from var(--c-feat-healing) h s l / 50%), 0 0 3rem hsl(from var(--c-feat-healing) h s l / 50%);
+}
+
+div.tab section.block.disabled {
+    box-shadow: inset 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
+    border: 1px solid var(--c-bg);
+}
+
+span.crude { color: var(--c-crude); }
+span.common { color: var(--c-common); }
+span.extraordinary { color: var(--c-extraordinary); }
+span.rare { color: var(--c-rare); }
+span.legendary {
+    color: var(--c-legendary);
+    text-shadow: 0 0 0.25rem var(--c-legendary), 0 0 0.35rem var(--c-legendary);
+}
+span.mythical {
+    color: var(--c-mythical);
+    text-shadow: 0 0 0.25rem var(--c-mythical), 0 0 0.35rem var(--c-mythical);
+}
+
+span.material { color: var(--c-material); }
+span.refinement { color: var(--c-refinement); }
+span.powercomp {
+    color: var(--c-powercomp);
+    text-shadow: 0 0 0.25rem var(--c-powercomp), 0 0 0.35rem var(--c-powercomp);
+}
+
+span.agility { color: var(--c-agility); }
+span.speed { color: var(--c-speed); }
+span.dexterity { color: var(--c-dexterity); }
+
+span.strength { color: var(--c-strength); }
+span.power { color: var(--c-power); }
+span.fortitude { color: var(--c-fortitude); }
+
+span.intellect { color: var(--c-intellect); }
+span.engineering { color: var(--c-engineering); }
+span.memory { color: var(--c-memory); }
+
+span.will { color: var(--c-will); }
+span.resolve { color: var(--c-resolve); }
+span.awareness { color: var(--c-awareness); }
+
+span.display { color: var(--c-display); }
+span.portrayal { color: var(--c-portrayal); }
+span.stunt { color: var(--c-stunt); }
+
+span.charm { color: var(--c-charm); }
+span.appeal { color: var(--c-appeal); }
+span.language { color: var(--c-language); }
+
+span.warfare { color: var(--c-warfare); }
+span.tactics { color: var(--c-tactics); }
+span.innovation { color: var(--c-innovation); }
+span.magecraft { color: var(--c-magecraft); }
+span.influence { color: var(--c-influence); }
+span.prowess { color: var(--c-prowess); }
+
+span.turn-action { color: var(--c-turn-action); }
+span.interrupt-action { color: var(--c-interrupt-action); }
+
+span.invsize { color: var(--c-invsize); }
+span.slot { color: var(--c-slot); }
+span.distance { color: var(--c-distance); }
+span.favor { color: var(--c-favor); }
+span.disfavor { color: var(--c-disfavor); }
+span.stamina { color: var(--c-stamina); }
+span.fatigue { color: var(--c-fatigue); }
+span.damage { color: var(--c-damage); }
+span.block { color: var(--c-block); }
+span.dodge { color: var(--c-dodge); }
+span.shp { color: var(--c-shp); }
+span.dhp { color: var(--c-dhp); }
+span.time { color: var(--c-time); }
+
+span.dmgtype-physical { color: var(--c-dmgtype-physical); }
+span.dmgtype-psyche { color: var(--c-dmgtype-psyche); }
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--c-inactive);
+    font-weight: bold;
+}
