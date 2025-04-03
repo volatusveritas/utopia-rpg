@@ -167,7 +167,6 @@ nav#tabs button {
 nav#tabs button:hover {
     border-color: var(--c-hovered);
     color: var(--c-hovered);
-    /* padding: 0.25rem 0.8rem; */
     transition: all var(--animation-length-snappy) ease-out;
 }
 
