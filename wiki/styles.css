@@ -201,6 +201,7 @@ div.tab section.block {
     width: 100%;
     background-image: linear-gradient(var(--c-bg), var(--c-bg-0));
     transition: scale var(--animation-length-snappy) ease-in;
+    overflow-x: auto;
     border: 0.125rem solid var(--c-bg-2);
     border-radius: 0.25rem;
     padding: 1rem;
