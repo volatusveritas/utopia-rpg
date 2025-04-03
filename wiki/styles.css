@@ -201,6 +201,11 @@ div.tab section.block {
     width: 100%;
     background-image: linear-gradient(var(--c-bg), var(--c-bg-0));
     transition: scale var(--animation-length-snappy) ease-in;
+    border: 0.125rem solid var(--c-bg-2);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: var(--c-bg);
+    box-shadow: 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
 }
 
 div.tab section.block:hover {
@@ -224,14 +229,6 @@ div.tab section.block:hover {
     div.tab section.block {
         width: calc((100% - 3rem) / 4);
     }
-}
-
-div.tab section.block {
-    border: 0.125rem solid var(--c-bg-2);
-    border-radius: 0.25rem;
-    padding: 1rem;
-    background-color: var(--c-bg);
-    box-shadow: 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
 }
 
 div.tab section.block.info h1 {
