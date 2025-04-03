@@ -341,6 +341,17 @@ h1 {
     margin: 0;
 }
 
+li:not(:first-child),
+li ul,
+li ol,
+li dl {
+    margin-top: 0.25rem;
+}
+
+ul, ol, dl {
+    margin-block-start: 1rem;
+}
+
 div.tab section.block.info p:not(:first-child) {
     margin-top: 1rem;
 }
