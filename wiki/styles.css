@@ -238,7 +238,7 @@ div.tab section.block.info h1 {
 
 div.tab details.group {
     border: 0.25rem solid var(--c-bg-2);
-    border-radius: 0 0.25rem 0.25rem 0.25rem;
+    border-radius: 0 0 0.25rem 0.25rem;
     position: relative;
     box-shadow: 0 0.5rem 1rem 0px rgb(0 0 0 / 40%);
     width: 100%;
@@ -308,15 +308,15 @@ div.tab details.group.neutral summary::after {
     opacity: 0.5;
 }
 
-div.tab details.group:not(:first-child) {
-    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2 - 0.25rem + 1rem);
+div.tab details.group {
+    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2 + 1rem);
 }
 
 div.tab details.group > summary {
     background-color: var(--c-bg-2);
     border-radius: 0.25rem 0.25rem 0 0;
     font-size: 1.3rem;
-    width: fit-content;
+    width: calc(100% - 0.5rem);
     padding: 0.25rem 0.5rem;
     position: absolute;
     top: calc(0px - 0.25rem - 1em * var(--line-height) - 0.25rem * 2 + 1px);
