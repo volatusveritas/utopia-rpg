@@ -309,6 +309,10 @@ div.tab details.group.neutral summary::after {
 }
 
 div.tab details.group {
+    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2);
+}
+
+div.tab details.group:not(:first-child) {
     margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2 + 1rem);
 }
 
