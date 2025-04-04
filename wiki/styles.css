@@ -70,6 +70,10 @@
     --c-appeal: var(--c-charm);
     --c-language: var(--c-charm);
 
+    --c-constitution: var(--s-nord-11);
+    --c-effervescence: var(--s-nord-8);
+    --c-endurance: var(--s-nord-12);
+
     /* Action types */
     --c-turn-action: var(--s-nord-13);
     --c-interrupt-action: var(--s-nord-15);
@@ -101,6 +105,11 @@
     --c-magecraft: var(--s-nord-13);
     --c-influence: var(--s-nord-10);
     --c-prowess: var(--s-nord-15);
+
+    /* Major Scores */
+    --c-body: var(--s-nord-11);
+    --c-mind: var(--s-nord-10);
+    --c-soul: var(--s-nord-8);
 
     /* Group types */
     --c-group-positive: var(--s-nord-14);
@@ -484,6 +493,14 @@ span.powercomp {
     color: var(--c-powercomp);
     text-shadow: 0 0 0.25rem var(--c-powercomp), 0 0 0.35rem var(--c-powercomp);
 }
+
+span.constitution { color: var(--c-constitution); }
+span.effervescence { color: var(--c-effervescence); }
+span.endurance { color: var(--c-endurance); }
+
+span.body { color: var(--c-body); }
+span.mind { color: var(--c-mind); }
+span.soul { color: var(--c-soul); }
 
 span.agility { color: var(--c-agility); }
 span.speed { color: var(--c-speed); }
