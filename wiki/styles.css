@@ -439,55 +439,25 @@ div.tab section.feature span.stackable {
     color: var(--s-nord-12);
 }
 
-div.tab section.feature.special {
-    border-color: var(--c-feat-special);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-special) h s l / 40%));
+div.tab section.feature {
+    border-color: var(--feature-accent);
+    background-image: linear-gradient(var(--c-bg), hsl(from var(--feature-accent) h s l / 40%));
 }
 
-div.tab section.feature.debuff {
-    border-color: var(--c-feat-debuffing);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-debuffing) h s l / 40%));
-}
-
-div.tab section.feature.penetration {
-    border-color: var(--c-feat-penetration);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-penetration) h s l / 40%));
-}
-
-div.tab section.feature.range {
-    border-color: var(--c-feat-range);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-range) h s l / 40%));
-}
-
-div.tab section.feature.damage {
-    border-color: var(--c-feat-damage);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-damage) h s l / 40%));
-}
-
-div.tab section.feature.utility {
-    border-color: var(--c-feat-utility);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-utility) h s l / 40%));
-}
-
-div.tab section.feature.annoyance {
-    border-color: var(--c-feat-annoyance);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-annoyance) h s l / 40%));
-}
-
-div.tab section.feature.defense {
-    border-color: var(--c-feat-defense);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-defense) h s l / 40%));
-}
-
-div.tab section.feature.movement {
-    border-color: var(--c-feat-movement);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-movement) h s l / 40%));
-}
+div.tab section.feature.special { --feature-accent: var(--c-feat-special); }
+div.tab section.feature.debuff { --feature-accent: var(--c-feat-debuff); }
+div.tab section.feature.penetration { --feature-accent: var(--c-feat-penetration); }
+div.tab section.feature.range { --feature-accent: var(--c-feat-range); }
+div.tab section.feature.damage { --feature-accent: var(--c-feat-damage); }
+div.tab section.feature.utility { --feature-accent: var(--c-feat-utility); }
+div.tab section.feature.annoyance { --feature-accent: var(--c-feat-annoyance); }
+div.tab section.feature.defense { --feature-accent: var(--c-feat-defense); }
+div.tab section.feature.movement { --feature-accent: var(--c-feat-movement); }
+div.tab section.feature.healing { --feature-accent: var(--c-feat-healing); }
 
 div.tab section.feature.healing {
-    border-color: var(--c-feat-healing);
-    background-image: linear-gradient(var(--c-bg), hsl(from var(--c-feat-healing) h s l / 40%));
-    box-shadow: 0 0 1rem hsl(from var(--c-feat-healing) h s l / 50%), 0 0 3rem hsl(from var(--c-feat-healing) h s l / 50%);
+    --feature-accent: var(--c-feat-healing);
+    box-shadow: 0 0 1rem hsl(from var(--feature-accent) h s l / 50%), 0 0 3rem hsl(from var(--feature-accent) h s l / 50%);
 }
 
 div.tab section.block.disabled {
