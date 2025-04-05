@@ -257,19 +257,13 @@ div.tab details.group {
 }
 
 div.tab details.group > div.group-contents {
-    padding: 0.75rem;
+    padding: 1rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     box-sizing: border-box;
-}
-
-@media only screen and (min-width: 600px) {
-    div.tab details.group > div.group-contents {
-        padding: 1.5rem;
-    }
 }
 
 div.tab details.group.positive {
@@ -321,8 +315,8 @@ div.tab details.group {
     margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2);
 }
 
-div.tab details.group:not(:first-child) {
-    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2 + 1rem);
+div.tab details.group details.group {
+    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2);
 }
 
 div.tab details.group > summary {
