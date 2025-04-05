@@ -313,21 +313,22 @@ div.tab details.group.neutral summary::after {
 }
 
 div.tab details.group {
-    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2);
+    margin-top: calc(1.3rem + 0.25rem * 2);
 }
 
 div.tab details.group details.group {
-    margin-top: calc(1.3rem * var(--line-height) + 0.25rem * 2);
+    margin-top: calc(1.3rem + 0.25rem * 2);
 }
 
 div.tab details.group > summary {
+    line-height: 1;
     background-color: var(--c-bg-2);
     border-radius: 0.25rem 0.25rem 0 0;
     font-size: 1.3rem;
     width: calc(100% - 0.5rem);
     padding: 0.25rem 0.5rem;
     position: absolute;
-    top: calc(0px - 1em * var(--line-height) - 0.25rem * 2 + 1px);
+    top: calc(0px - 1em - 0.25rem * 2 + 1px);
     left: -0.25rem;
     font-weight: normal;
     color: var(--c-hi-primary);
