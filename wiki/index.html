@@ -28,7 +28,259 @@
             </div>
 
             <div id="tab-basics" class="tab">
-                <p>This is the basics tab.</p>
+                <details class="group">
+                    <summary>Characters</summary>
+                    <div class="group-contents">
+                        <details class="group">
+                            <summary>Character Creation</summary>
+                            <div class="group-contents">
+                                <section class="block info">
+                                    <h1>Steps</h1>
+
+                                    <ol>
+                                        <li>Choose a species or subspecies (either standard or custom).</li>
+                                        <li>Fill in your <span class="block">Block Rating</span> and <span class="dodge">Dodge Rating</span> from your species.</li>
+                                        <li>Fill in your <span class="constitution">Constitution</span>, <span class="endurance">Endurance</span>, and <span class="effervescence">Effervescence</span> from your species.</li>
+                                        <li>Write down which subtraits you are gifted in from your species.</li>
+                                        <li>Write down which languages you know from your species.</li>
+                                        <li>Set all of your defenses to 1.</li>
+                                        <li>Set your XP to 0 out of 1,000.</li>
+                                        <li>Set your Spendable Points to 10.</li>
+                                        <li>Invest your Spendable Points into talents and choose a specialist talent (you may save up to 5 Spendable Points).</li>
+                                        <li>Look into <b>Derived Character Values</b> to fill the remaining values.</li>
+                                    </ol>
+                                </section>
+                            </div>
+                        </details>
+
+                        <details class="group">
+                            <summary>Traits and Subtraits</summary>
+                            <div class="group-contents">
+                                <section class="block info">
+                                    <h1>Dependency Tree</h1>
+
+                                    <ul>
+                                        <li>
+                                            <b><span class="body">Body</span></b> limits your
+                                            <i><span class="strength">Strength</span></i> subtraits (<span class="power">Power</span> and <span class="fortitude">Fortitude</span>)
+                                            and <i><span class="agility">Agility</span></i> subtraits (<span class="speed">Speed</span> and <span class="dexterity">Dexterity</span>).
+                                        </li>
+                                        <li>
+                                            <b><span class="mind">Mind</span></b> limits your
+                                            <i><span class="intellect">Intellect</span></i> subtraits (<span class="engineering">Engineering</span> and <span class="memory">Memory</span>)
+                                            and <i><span class="will">Will</span></i> subtraits (<span class="resolve">Resolve</span> and <span class="awareness">Awareness</span>).
+                                        </li>
+                                        <li>
+                                            <b><span class="soul">Soul</span></b> limits your
+                                            <i><span class="display">Display</span></i> subtraits (<span class="portrayal">Portrayal</span> and <span class="stunt">Stunt</span>)
+                                            and <i><span class="charm">Charm</span></i> subtraits (<span class="appeal">Appeal</span> and <span class="language">Language</span>).
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <section class="block info">
+                                    <h1>Trait and Subtrait Modifiers</h1>
+
+                                    <p>Each trait and subtrait has a <b>modifier</b> that is equal to its value minus four. This is the value used in rolls when they require use of the trait or subtrait.</p>
+                                </section>
+
+                                <section class="block info">
+                                    <h1>Gifted Subtraits</h1>
+
+                                    <p>If you are <b>gifted</b> in a subtrait, the maximum value for that subtrait is doubled and its modifier can not go below zero.</p>
+                                </section>
+
+                                <section class="block info">
+                                    <h1><span class="agility">Agility</span></h1>
+
+                                    <p>Your <span class="agility">Agility</span> is the sum of your <span class="speed">Speed</span> and your <span class="dexterity">Dexterity</span>.</p>
+
+                                    <dl>
+                                        <dt><span class="speed">Speed</span></dt>
+                                        <dd>How fast you can run in meters per second and how quickly you can gain momentum. Affects how far you can move in a turn.</dd>
+
+                                        <dt><span class="dexterity">Dexterity</span></dt>
+                                        <dd>How diligent your fine motor functions are. Affects how accurate you are with ranged weapons.</dd>
+                                    </dl>
+                                </section>
+
+                                <section class="block info">
+                                    <h1><span class="strength">Strength</span></h1>
+
+                                    <p>Your <span class="strength">Strength</span> is the sum of your <span class="power">Power</span> and your <span class="fortitude">Fortitude</span>.</p>
+
+                                    <dl>
+                                        <dt><span class="power">Power</span></dt>
+                                        <dd>How much effort you can put into a swift motion. Affects melee attacks and leap distance.</dd>
+
+                                        <dt><span class="fortitude">Fortitude</span></dt>
+                                        <dd>How much your body can handle, be it damage or negative conditions.</dd>
+                                    </dl>
+                                </section>
+
+                                <section class="block info">
+                                    <h1><span class="intellect">Intellect</span></h1>
+
+                                    <p>Your <span class="intellect">Intellect</span> is the sum of your <span class="engineering">Engineering</span> and your <span class="memory">Memory</span>.</p>
+
+                                    <dl>
+                                        <dt><span class="engineering">Engineering</span></dt>
+                                        <dd>How well you operate and manipulate working systems, technological or otherwise. Affects crafting.</dd>
+
+                                        <dt><span class="memory">Memory</span></dt>
+                                        <dd>How well you can recall previously processed information.</dd>
+                                    </dl>
+                                </section>
+
+                                <section class="block info">
+                                    <h1><span class="will">Will</span></h1>
+
+                                    <p>Your <span class="will">Will</span> is the sum of your <span class="resolve">Resolve</span> and your <span class="awareness">Awareness</span>.</p>
+
+                                    <dl>
+                                        <dt><span class="resolve">Resolve</span></dt>
+                                        <dd>How you react under pressure how much mental taxation you can withstand. Affects the power of spells you can cast.</dd>
+
+                                        <dt><span class="awareness">Awareness</span></dt>
+                                        <dd>How alert, observant, and prepared—both passively and actively—you are.</dd>
+                                    </dl>
+                                </section>
+
+                                <section class="block info">
+                                    <h1><span class="display">Display</span></h1>
+
+                                    <p>Your <span class="display">Display</span> is the sum of your <span class="portrayal">Portrayal</span> and your <span class="stunt">Stunt</span>.</p>
+
+                                    <dl>
+                                        <dt><span class="portrayal">Portrayal</span></dt>
+                                        <dd>Helps you resemble something you're not, replicate social behaviour, intimidate others, and lie.</dd>
+
+                                        <dt><span class="stunt">Stunt</span></dt>
+                                        <dd>How well you can keep your balance and position yourself regardless of your grounding. Affects how stealth you can be.</dd>
+                                    </dl>
+                                </section>
+
+                                <section class="block info">
+                                    <h1><span class="charm">Charm</span></h1>
+
+                                    <p>Your <span class="charm">Charm</span> is the sum of your <span class="appeal">Appeal</span> and your <span class="language">Language</span>.</p>
+
+                                    <dl>
+                                        <dt><span class="appeal">Appeal</span></dt>
+                                        <dd>How well you can communicate to others.</dd>
+
+                                        <dt><span class="language">Language</span></dt>
+                                        <dd>How eloquently you can speak and express ideas in a language. Affects how quickly you can learn a new language.</dd>
+                                    </dl>
+                                </section>
+                            </div>
+                        </details>
+
+                        <details class="group">
+                            <summary>Character Advancement</summary>
+                            <div class="group-contents">
+                                <section class="block info">
+                                    <h1>Character Level</h1>
+
+                                    <p>Your character's level is the sum of your Spendable Points and your <span class="body">Body</span>, <span class="mind">Mind</span>, and <span class="soul">Soul</span> scores.</p>
+                                </section>
+
+                                <section class="block info">
+                                    <h1>Target Experience</h1>
+
+                                    <p>Your target experience is equal to your character's level times a hundred. If you reach or surpass your target experience, you lose that amount of experience and <b>level up</b>.</p>
+                                </section>
+
+                                <section class="block info">
+                                    <h1>Level Up</h1>
+
+                                    <p>Once you level up:</p>
+
+                                    <ul>
+                                        <li>Increase one of your subtraits by one.</li>
+                                        <li>You get a Spendable Point.</li>
+                                        <li>If your new level is a multiple of ten, choose a specialist talent.</li>
+                                        <li>Remember to recalculate <b>Derived Character Values</b> that are modified by your changes.</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </details>
+
+                        <details class="group">
+                            <summary>Derived Character Values</summary>
+                            <div class="group-contents">
+                                <section class="block info">
+                                    <h1>Health and Stamina</h1>
+
+                                    <ul>
+                                    <li>Your maximum <span class="shp">Surface Health Points</span> (<span class="shp">SHP</span>) is your <span class="body">Body</span> times your <span class="constitution">Constitution</span> plus your level.</li>
+                                    <li>Your maximum <span class="dhp">Deep Health Points</span> (<span class="dhp">DHP</span>) is your <span class="soul">Soul</span> times your <span class="effervescence">Effervescence</span> plus your level.</li>
+                                    <li>Your maximum <span class="stamina">Stamina</span> is your <span class="mind">Mind</span> times your <span class="endurance">Endurance</span> plus your level.</li>
+                                    </ul>
+                                </section>
+
+                                <section class="block info">
+                                    <h1>Travel Speeds</h1>
+
+                                    <ul>
+                                    <li>Your Land travel is equal to your <span class="speed">Speed</span> score.</li>
+                                    <li>Your Water travel is equal to half of your <span class="speed">Speed</span> score.</li>
+                                    <li>Your Air travel is zero.</li>
+                                    </ul>
+
+                                    <p>These values may be modified by talents, items, or other effects.</p>
+                                </section>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary>Rolls and Tests</summary>
+                    <div class="group-contents">
+                        <section class="block info">
+                            <h1>Test Roll</h1>
+
+                            <p>A test roll is made based on one of the twelve subtraits. To perform a test, roll 3d6 and add the subtrait's modifier.</p>
+
+                            <p>The test is done against a test difficulty (TD). If the final value of the roll is equal to or higher than the difficulty, the roll is a success. Otherwise, it is a failure.</p>
+                        </section>
+
+                        <section class="block info">
+                            <h1>Contest Rolls</h1>
+
+                            <p>When against another creature or active opposition, your test will be compared to another test instead of a test difficulty. The higher roll will win the contest.</p>
+
+                            <p>When a tie happens check for these in order:</p>
+
+                            <ol>
+                                <li>If it's a PC versus an NPC, the PC wins.</li>
+                                <li>If one is defending themselves, they win.</li>
+                                <li>The one with the higher modifier value wins.</li>
+                                <li>The one with higher level or difficulty rating wins.</li>
+                                <li>One is chosen at random as the winner.</li>
+                            </ol>
+                        </section>
+
+                        <section class="block info">
+                            <h1>Favor and Disfavor</h1>
+
+                            <p>Situations and conditions or limitations may sway in your favour or against you, in which case you will gain <b>favour</b> or <b>disfavour</b>.</p>
+
+                            <p>For each point of <b>favour</b>, roll an additional 1d6. For each point of <b>disfavour</b>, roll one less 1d6.</p>
+
+                            <p>With enough <b>disfavour</b> to roll zero dice, the test is automatically failed.</p>
+                        </section>
+
+                        <section class="block info">
+                            <h1>Critical Successes and Failures</h1>
+
+                            <p>If three or more 6 are rolled, it is considered a <b>critical success</b>. In this case, the roll's value, before modifiers, is doubled. This results in an positive extreme outcome.</p>
+
+                            <p>If every die rolled is a 1, it is considered a <b>critical failure</b>. The roll's value becomes zero and ignores modifiers. This results in a negative extreme outcome.</p>
+                        </section>
+                    </div>
+                </details>
             </div>
 
             <div id="tab-combat" class="tab">
