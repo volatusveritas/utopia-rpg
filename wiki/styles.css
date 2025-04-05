@@ -118,7 +118,7 @@
 
     /* Types of feature */
     --c-feat-special: var(--s-nord-15);
-    --c-feat-debuffing: var(--s-nord-7);
+    --c-feat-debuff: var(--s-nord-7);
     --c-feat-penetration: var(--s-nord-12);
     --c-feat-range: var(--s-nord-14);
     --c-feat-damage: var(--s-nord-11);
