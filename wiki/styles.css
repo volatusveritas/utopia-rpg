@@ -133,7 +133,7 @@
     --t-noto-sans: 'Noto Sans', sans-serif;
 
     /* Other variables */
-    --line-height: 1;
+    --line-height: 1.2;
     --animation-length-snappy: 0.0625s;
 
     color: var(--c-fg);
